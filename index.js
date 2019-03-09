@@ -19,7 +19,7 @@ console.error('Fatal Error :jwtprivatekey is not defined');
 process.exit(1);  
 }
 
-mongoose.connect('mongodb://localhost/vidly')
+mongoose.connect('mongodb+srv://discussion:aseem123@cluster0-1ngfy.mongodb.net/discussion?retryWrites=true')
 .then(() => console.log('Connected to MongoDB...'))
 .catch(err => console.error('Could not connect to MongoDB...'));
 
